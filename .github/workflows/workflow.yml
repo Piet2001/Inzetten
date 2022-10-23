@@ -17,6 +17,11 @@ jobs:
     - name: Create local changes
       run: |
         curl -X GET https://www.meldkamerspel.com/einsaetze.json > inzetten.json
+                
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
         
     - name: Prettify code
       uses: creyD/prettier_action@v3.3
