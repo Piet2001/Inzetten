@@ -22916,6 +22916,7 @@
     "requirements": { "hondengeleider": 1, "police_cars": 2, "bike_police": 1 },
     "chances": {},
     "additional": {
+      "followup_missions_ids": [1018],
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions",
       "subsequent_missions_ids": [1001],
@@ -23165,6 +23166,7 @@
     "chances": {},
     "additional": {
       "expansion_missions_ids": [684, 685],
+      "followup_missions_ids": [1018],
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions"
     },
@@ -23190,6 +23192,7 @@
     "chances": {},
     "additional": {
       "expansion_missions_ids": [685],
+      "followup_missions_ids": [1018],
       "max_possible_prisoners": 2,
       "filter_id": "riot_police_missions"
     },
@@ -23221,6 +23224,7 @@
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
+      "followup_missions_ids": [1018],
       "max_possible_prisoners": 3,
       "filter_id": "riot_police_missions",
       "patient_specialization_ids": [1],
@@ -25711,6 +25715,7 @@
     "requirements": { "police_cars": 3 },
     "chances": {},
     "additional": {
+      "followup_missions_ids": [1018],
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions"
     },
@@ -25735,6 +25740,7 @@
     "requirements": { "police_cars": 3 },
     "chances": {},
     "additional": {
+      "followup_missions_ids": [1018],
       "max_possible_prisoners": 2,
       "filter_id": "police_station_missions"
     },
@@ -28407,7 +28413,10 @@
     ],
     "requirements": { "police_cars": 3 },
     "chances": {},
-    "additional": { "filter_id": "police_station_missions" },
+    "additional": {
+      "followup_missions_ids": [1018],
+      "filter_id": "police_station_missions"
+    },
     "prerequisites": { "main_building": 5, "police_stations": 3 },
     "overlay_index": null,
     "base_mission_id": 834,
@@ -32184,9 +32193,8 @@
     "additional": {
       "possible_patient": 2,
       "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-02-17T10:00:00Z",
-      "date_end": "2023-02-22T23:00:00Z",
+      "date_start": "2022-02-25T10:00:00Z",
+      "date_end": "2022-03-01T23:59:00Z",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Interne Geneeskunde"],
       "patient_specializations": "Interne Geneeskunde"
@@ -32220,10 +32228,9 @@
       "possible_patient": 6,
       "max_possible_prisoners": 2,
       "filter_id": "police_station_missions",
-      "optional_event_mission": true,
       "patient_at_end_of_mission": true,
-      "date_start": "2023-02-17T10:00:00Z",
-      "date_end": "2023-02-22T23:00:00Z",
+      "date_start": "2022-02-25T10:00:00Z",
+      "date_end": "2022-03-01T23:59:00Z",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Interne Geneeskunde"],
       "patient_specializations": "Interne Geneeskunde"
@@ -32257,10 +32264,9 @@
       "min_possible_prisoners": 1,
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions",
-      "optional_event_mission": true,
       "patient_at_end_of_mission": true,
-      "date_start": "2023-02-17T10:00:00Z",
-      "date_end": "2023-02-22T23:00:00Z",
+      "date_start": "2022-02-25T10:00:00Z",
+      "date_end": "2022-03-01T23:59:00Z",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Interne Geneeskunde"],
       "patient_specializations": "Interne Geneeskunde"
@@ -32293,10 +32299,9 @@
       "possible_patient": 2,
       "max_possible_prisoners": 3,
       "filter_id": "police_station_missions",
-      "optional_event_mission": true,
       "patient_at_end_of_mission": true,
-      "date_start": "2023-02-17T10:00:00Z",
-      "date_end": "2023-02-22T23:00:00Z",
+      "date_start": "2022-02-25T10:00:00Z",
+      "date_end": "2022-03-01T23:59:00Z",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Interne Geneeskunde"],
       "patient_specializations": "Interne Geneeskunde"
@@ -32327,9 +32332,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-02-17T10:00:00Z",
-      "date_end": "2023-02-22T23:00:00Z"
+      "date_start": "2022-02-25T10:00:00Z",
+      "date_end": "2022-03-01T23:59:00Z"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -32355,9 +32359,8 @@
       "possible_patient": 3,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-02-17T10:00:00Z",
-      "date_end": "2023-02-22T23:00:00Z",
+      "date_start": "2022-02-25T10:00:00Z",
+      "date_end": "2022-03-01T23:59:00Z",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Interne Geneeskunde"],
       "patient_specializations": "Interne Geneeskunde"
@@ -32391,9 +32394,8 @@
       "duration": 3600,
       "guard_mission": true,
       "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-02-17T10:00:00Z",
-      "date_end": "2023-02-22T23:00:00Z"
+      "date_start": "2022-02-25T10:00:00Z",
+      "date_end": "2022-03-01T23:59:00Z"
     },
     "prerequisites": {
       "main_building": 0,
@@ -32422,9 +32424,8 @@
     "additional": {
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-02-17T10:00:00Z",
-      "date_end": "2023-02-22T23:00:00Z"
+      "date_start": "2022-02-25T10:00:00Z",
+      "date_end": "2022-03-01T23:59:00Z"
     },
     "prerequisites": { "main_building": 5, "police_stations": 2 },
     "overlay_index": null,
@@ -32448,9 +32449,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-02-17T10:00:00Z",
-      "date_end": "2023-02-22T23:00:00Z"
+      "date_start": "2022-02-25T10:00:00Z",
+      "date_end": "2022-03-01T23:59:00Z"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -32476,9 +32476,8 @@
       "min_possible_prisoners": 1,
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-02-17T10:00:00Z",
-      "date_end": "2023-02-22T23:00:00Z"
+      "date_start": "2022-02-25T10:00:00Z",
+      "date_end": "2022-03-01T23:59:00Z"
     },
     "prerequisites": { "main_building": 5, "police_stations": 1 },
     "overlay_index": null,
@@ -34035,7 +34034,10 @@
     ],
     "requirements": { "police_cars": 2 },
     "chances": {},
-    "additional": { "filter_id": "police_station_missions" },
+    "additional": {
+      "followup_missions_ids": [1018],
+      "filter_id": "police_station_missions"
+    },
     "prerequisites": { "main_building": 5, "police_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 947,
@@ -37299,5 +37301,30 @@
     "base_mission_id": 1017,
     "additive_overlays": "",
     "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "1018",
+    "name": "Assistentie collega",
+    "place": "",
+    "place_array": [],
+    "average_credits": 840,
+    "generated_by": "",
+    "icons": [
+      "/images/cuffs_gruen.png",
+      "/images/cuffs_gelb.png",
+      "/images/cuffs_rot.png"
+    ],
+    "requirements": { "police_cars": 3 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "followup_mission_only": true
+    },
+    "prerequisites": { "main_building": 5, "police_stations": 3 },
+    "overlay_index": null,
+    "base_mission_id": 1018,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
