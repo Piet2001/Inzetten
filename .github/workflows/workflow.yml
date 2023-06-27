@@ -17,6 +17,7 @@ jobs:
     - name: Create local changes
       run: |
         curl -X GET https://www.meldkamerspel.com/einsaetze.json > inzetten.json
+        curl -X GET https://www.meldkamerspel.com/alliance_event_types.json > events.json
                 
     - name: json-syntax-check
       uses: limitusus/json-syntax-check@v1
