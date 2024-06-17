@@ -2291,7 +2291,8 @@
     "additional": {
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions",
-      "optional_event_mission": false
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": { "main_building": 5, "police_stations": 1 },
     "overlay_index": null,
@@ -6534,7 +6535,7 @@
     "name": "Verkeersongeval met gevaarlijke stoffen",
     "place": "",
     "place_array": [],
-    "average_credits": 1000,
+    "average_credits": 2240,
     "generated_by": "",
     "icons": [
       "/images/caraccident_gruen.png",
@@ -6556,6 +6557,7 @@
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
+      "expansion_missions_ids": [204],
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
       "patient_specialization_ids": [4],
@@ -6566,7 +6568,7 @@
       "main_building": 0,
       "rescue_stations": 1,
       "police_stations": 2,
-      "fire_stations": 6
+      "fire_stations": 11
     },
     "overlay_index": null,
     "base_mission_id": 203,
@@ -6575,10 +6577,10 @@
   },
   {
     "id": "204",
-    "name": "Verkeersongeval met gevaarlijke stoffen",
+    "name": "Verkeersongeval met gevaarlijke stoffen (middel)",
     "place": "",
     "place_array": [],
-    "average_credits": 1600,
+    "average_credits": 5690,
     "generated_by": "",
     "icons": [
       "/images/caraccident_gruen.png",
@@ -6592,7 +6594,7 @@
       "hazmat_vehicles": 1,
       "gwmess": 1,
       "heavy_rescue_vehicles": 1,
-      "firetrucks": 1,
+      "firetrucks": 2,
       "police_cars": 2
     },
     "chances": {
@@ -6602,8 +6604,8 @@
       "patient_transport": 40
     },
     "additional": {
-      "possible_patient": 1,
-      "possible_patient_min": 1,
+      "possible_patient": 3,
+      "possible_patient_min": 2,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
       "patient_specialization_ids": [4],
@@ -6612,9 +6614,9 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "rescue_stations": 1,
+      "rescue_stations": 8,
       "police_stations": 2,
-      "fire_stations": 11
+      "fire_stations": 14
     },
     "overlay_index": null,
     "base_mission_id": 204,
