@@ -2,7 +2,7 @@ import json
 from Overige import discord
 
 def stats():
-    missions = json.load(open(f"Inzetten.json"))
+    missions = json.load(open(f"inzetten.json"))
     old = json.load(open(f"Overige/stats.json"))
     output = {}
     normal_missions = []
