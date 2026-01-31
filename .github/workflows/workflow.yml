@@ -23,12 +23,15 @@ jobs:
     - name: install python packages
       run: |
         python -m pip install --upgrade pip
+        pip install -r requirements.txt
 
     - name: Create local changes
       run: |
         curl -X GET https://www.meldkamerspel.com/einsaetze.json > inzetten.json
         curl -X GET https://www.meldkamerspel.com/alliance_event_types.json > events.json
         python Update.py
+      env:
+        DISCORD: ${{ secrets.DISCORD  }}
                 
     - name: json-syntax-check
       uses: limitusus/json-syntax-check@v1
