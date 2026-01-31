@@ -1,10 +1,10 @@
 {
-    "mission_amount": 0,
-    "average_credits": 0,
-    "min_credits": 0,
-    "max_credits": 0,
-    "alliance_mission_amount": 0,
-    "alliance_Average_credits": 0,
-    "planned_mission_amount": 0,
-    "planned_Average_credits": 0
+  "mission_amount": 0,
+  "average_credits": 0,
+  "min_credits": 0,
+  "max_credits": 0,
+  "alliance_mission_amount": 0,
+  "alliance_Average_credits": 0,
+  "planned_mission_amount": 0,
+  "planned_Average_credits": 0
 }
