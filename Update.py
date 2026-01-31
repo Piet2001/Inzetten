@@ -1,4 +1,5 @@
 import json
+from Overige import stats
 
 print("start")
 
@@ -34,5 +35,6 @@ with open('complete.json', 'w') as outfile:
 
 live.close()
 complete.close()
+stats.stats()
 
 print("finished")
