@@ -41,7 +41,11 @@ def stats():
     if change_message != "":
         print("Changes detected:")
         print(change_message)
-        discord.webhook("MKS Stats Update", change_message)
+
+        if output["average_credits"] > old["average_credits"]:
+            discord.webhook("MKS Stats Update", change_message, color="8388352")
+        else:
+            discord.webhook("MKS Stats Update", change_message)
 
     print("save output")
     with open("./Overige/stats.json", "w+") as outfile:

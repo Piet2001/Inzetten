@@ -2,8 +2,7 @@ import requests
 import os
 import time
 
-def webhook(title, message):
-    color = "16711680"
+def webhook(title, message, color="16711680"):
 
     webhook_url = os.getenv("DISCORD")
     embed = {
