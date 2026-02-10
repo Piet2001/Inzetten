@@ -8,6 +8,7 @@ def stats():
     normal_missions = []
     alliance_missions = []
     planned_missions = []
+    mission_types = []
     
     for mission in missions:
             if "only_alliance_mission" in mission.get('additional'):
@@ -16,6 +17,10 @@ def stats():
                 planned_missions.append(mission)
             else:
                 normal_missions.append(mission)
+
+            for type in mission.get("mission_categories", []):
+                if type not in mission_types:
+                    mission_types.append(type)
 
 
     normal = [v for item in normal_missions if (v := item.get("average_credits")) is not None and isinstance(v, (int, float))]
@@ -30,6 +35,17 @@ def stats():
     output["alliance_Average_credits"] = round((sum(alliance) / len(alliance)))
     output["planned_mission_amount"] = len(planned_missions)
     output["planned_Average_credits"] = round((sum(planned) / len(planned)))
+
+    mission_types.sort()
+
+    for type in mission_types:
+        type_missions = [v for item in normal_missions if type in item.get("mission_categories", []) and (v := item.get("average_credits")) is not None and isinstance(v, (int, float))]
+        if not "generation" in output:
+            output["generation"] = {}
+        if not type in output["generation"]:
+            output["generation"][type] = {}
+        output["generation"][type]["mission_amount"] = len(type_missions)
+        output["generation"][type]["average_credits"] = round((sum(type_missions) / len(type_missions)),2)
 
     change_message = ""
 
