@@ -50,9 +50,9 @@ def stats():
     change_message = ""
 
     if output["mission_amount"] != old["mission_amount"]:
-        change_message += f"Mission amount changed from {old['mission_amount']} to {output['mission_amount']}\n"
+        change_message += f"Mission amount changed from {old['mission_amount']} to {output['mission_amount']} {abs(old['mission_amount']) - output['mission_amount']}\n"
     if output["average_credits"] != old["average_credits"]:
-        change_message += f"Average credits changed from {old['average_credits']} to {output['average_credits']}\n"
+        change_message += f"Average credits changed from {old['average_credits']} to {output['average_credits']} {abs(old['average_credits']) - output['average_credits']}\n"
 
     if change_message != "":
         print("Changes detected:")
