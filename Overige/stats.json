@@ -1,6 +1,6 @@
 {
-  "mission_amount": 1456,
-  "average_credits": 5660.75,
+  "mission_amount": 1457,
+  "average_credits": 5658.18,
   "min_credits": 110,
   "max_credits": 87352,
   "alliance_mission_amount": 8,
@@ -37,8 +37,8 @@
       "average_credits": 8220.0
     },
     "fire": {
-      "mission_amount": 628,
-      "average_credits": 4969.47
+      "mission_amount": 629,
+      "average_credits": 4968.52
     },
     "fire_support_specialization": {
       "mission_amount": 127,
@@ -54,11 +54,11 @@
     },
     "police": {
       "mission_amount": 270,
-      "average_credits": 2491.33
+      "average_credits": 2483.67
     },
     "riot_police": {
-      "mission_amount": 98,
-      "average_credits": 6488.83
+      "mission_amount": 99,
+      "average_credits": 6478.13
     },
     "rural": {
       "mission_amount": 186,
