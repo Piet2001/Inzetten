@@ -1,6 +1,6 @@
 {
-  "mission_amount": 1458,
-  "average_credits": 5657.73,
+  "mission_amount": 1460,
+  "average_credits": 5651.16,
   "min_credits": 110,
   "max_credits": 87352,
   "alliance_mission_amount": 8,
@@ -17,8 +17,8 @@
       "average_credits": 5200.0
     },
     "ambulance": {
-      "mission_amount": 70,
-      "average_credits": 2872.0
+      "mission_amount": 71,
+      "average_credits": 2838.59
     },
     "bomb_disposal": {
       "mission_amount": 9,
@@ -53,8 +53,8 @@
       "average_credits": 1071.43
     },
     "police": {
-      "mission_amount": 270,
-      "average_credits": 2483.07
+      "mission_amount": 271,
+      "average_credits": 2481.96
     },
     "riot_police": {
       "mission_amount": 99,
