@@ -1,12 +1,12 @@
 {
-  "mission_amount": 1461,
-  "average_credits": 5656.19,
+  "mission_amount": 1445,
+  "average_credits": 5694.28,
   "min_credits": 110,
   "max_credits": 87352,
   "alliance_mission_amount": 8,
   "alliance_Average_credits": 32670,
-  "planned_mission_amount": 50,
-  "planned_Average_credits": 11798,
+  "planned_mission_amount": 49,
+  "planned_Average_credits": 11824,
   "generation": {
     "airport": {
       "mission_amount": 33,
@@ -37,8 +37,8 @@
       "average_credits": 8220.0
     },
     "fire": {
-      "mission_amount": 632,
-      "average_credits": 4973.4
+      "mission_amount": 622,
+      "average_credits": 5006.74
     },
     "fire_support_specialization": {
       "mission_amount": 127,
@@ -53,16 +53,16 @@
       "average_credits": 1071.43
     },
     "police": {
-      "mission_amount": 271,
-      "average_credits": 2481.96
+      "mission_amount": 266,
+      "average_credits": 2489.7
     },
     "riot_police": {
       "mission_amount": 99,
       "average_credits": 6478.13
     },
     "rural": {
-      "mission_amount": 188,
-      "average_credits": 2598.91
+      "mission_amount": 179,
+      "average_credits": 2644.44
     },
     "search_and_rescue": {
       "mission_amount": 4,
@@ -85,12 +85,12 @@
       "average_credits": 5362.93
     },
     "urban": {
-      "mission_amount": 543,
-      "average_credits": 4796.35
+      "mission_amount": 534,
+      "average_credits": 4848.65
     },
     "water_rescue": {
-      "mission_amount": 84,
-      "average_credits": 4876.67
+      "mission_amount": 83,
+      "average_credits": 4915.3
     },
     "water_rescue_2": {
       "mission_amount": 31,
