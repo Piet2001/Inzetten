@@ -1,6 +1,6 @@
 {
-  "mission_amount": 1461,
-  "average_credits": 5656.19,
+  "mission_amount": 1464,
+  "average_credits": 5647.48,
   "min_credits": 110,
   "max_credits": 87352,
   "alliance_mission_amount": 8,
@@ -53,8 +53,8 @@
       "average_credits": 1071.43
     },
     "police": {
-      "mission_amount": 271,
-      "average_credits": 2481.96
+      "mission_amount": 274,
+      "average_credits": 2474.82
     },
     "riot_police": {
       "mission_amount": 99,
