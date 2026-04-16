@@ -1,6 +1,6 @@
 {
-  "mission_amount": 1466,
-  "average_credits": 5661.89,
+  "mission_amount": 1464,
+  "average_credits": 5662.59,
   "min_credits": 110,
   "max_credits": 87352,
   "alliance_mission_amount": 8,
@@ -9,12 +9,8 @@
   "planned_Average_credits": 11798,
   "generation": {
     "airport": {
-      "mission_amount": 33,
-      "average_credits": 6728.79
-    },
-    "airport_specialization": {
-      "mission_amount": 2,
-      "average_credits": 5200.0
+      "mission_amount": 31,
+      "average_credits": 6827.42
     },
     "ambulance": {
       "mission_amount": 71,
