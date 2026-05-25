@@ -1,6 +1,6 @@
 {
-  "mission_amount": 1868,
-  "average_credits": 21304.81,
+  "mission_amount": 1874,
+  "average_credits": 21244.68,
   "min_credits": 110,
   "max_credits": 107387,
   "alliance_mission_amount": 8,
@@ -33,8 +33,8 @@
       "average_credits": 8220.0
     },
     "fire": {
-      "mission_amount": 1035,
-      "average_credits": 31279.28
+      "mission_amount": 1040,
+      "average_credits": 31149.37
     },
     "fire_support_specialization": {
       "mission_amount": 485,
@@ -65,24 +65,24 @@
       "average_credits": 9425.0
     },
     "technical_aid": {
-      "mission_amount": 29,
-      "average_credits": 5701.38
+      "mission_amount": 32,
+      "average_credits": 5712.19
     },
     "tow_trucks": {
-      "mission_amount": 21,
-      "average_credits": 2784.76
+      "mission_amount": 22,
+      "average_credits": 2778.18
     },
     "tow_trucks_only": {
-      "mission_amount": 21,
-      "average_credits": 2784.76
+      "mission_amount": 22,
+      "average_credits": 2778.18
     },
     "traffic_police_specialization": {
-      "mission_amount": 37,
-      "average_credits": 5288.11
+      "mission_amount": 39,
+      "average_credits": 5398.97
     },
     "urban": {
-      "mission_amount": 938,
-      "average_credits": 33882.55
+      "mission_amount": 942,
+      "average_credits": 33758.57
     },
     "water_rescue": {
       "mission_amount": 84,
