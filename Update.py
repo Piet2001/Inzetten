@@ -38,3 +38,54 @@ complete.close()
 stats.stats()
 
 print("finished")
+
+# --- EVENTS SECTION ---
+try:
+    events_live = open('events.json')
+    data_events_live = json.load(events_live)
+except Exception as e:
+    print(f"Error opening events.json: {e}")
+    data_events_live = []
+
+try:
+    events_complete = open('events_complete.json')
+    data_events_complete = json.load(events_complete)
+except Exception:
+    data_events_complete = []
+
+for e in data_events_live:
+    print(f"?? Checking event {e['caption']}")
+    ec = next((x for x in data_events_complete if x["caption"] == e["caption"]), None)
+    if(ec == None):
+        print(f"++ {e['caption']} doesn't exist, will be added")
+        index_live = data_events_live.index(e)
+        event_live_prev = data_events_live[index_live - 1] if index_live > 0 else None
+        if event_live_prev:
+            event_complete_prev = next((x for x in data_events_complete if x["caption"] == event_live_prev["caption"]), None)
+            if event_complete_prev:
+                index_complete_prev = data_events_complete.index(event_complete_prev)
+                data_events_complete.insert(index_complete_prev + 1, e)
+            else:
+                data_events_complete.append(e)
+        else:
+            data_events_complete.insert(0, e)
+    else:
+        print(f"+- Comparing event {e['caption']}")
+        if (e != ec):
+            print(f"--> Updating event {e['caption']}")
+            for z in data_events_complete:
+                if (z['caption'] == e['caption']):
+                    index = data_events_complete.index(z)
+                    data_events_complete[index] = e
+
+with open('events_complete.json', 'w') as outfile:
+    json.dump(data_events_complete, outfile)
+
+try:
+    events_live.close()
+except Exception:
+    pass
+try:
+    events_complete.close()
+except Exception:
+    pass
