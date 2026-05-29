@@ -54,14 +54,14 @@ except Exception:
     data_events_complete = []
 
 for e in data_events_live:
-    print(f"?? Checking event {e['caption']}")
-    ec = next((x for x in data_events_complete if x["caption"] == e["caption"]), None)
+    print(f"?? Checking event {e['id']}")
+    ec = next((x for x in data_events_complete if x["id"] == e["id"]), None)
     if(ec == None):
-        print(f"++ {e['caption']} doesn't exist, will be added")
+        print(f"++ {e['id']} doesn't exist, will be added")
         index_live = data_events_live.index(e)
         event_live_prev = data_events_live[index_live - 1] if index_live > 0 else None
         if event_live_prev:
-            event_complete_prev = next((x for x in data_events_complete if x["caption"] == event_live_prev["caption"]), None)
+            event_complete_prev = next((x for x in data_events_complete if x["id"] == event_live_prev["id"]), None)
             if event_complete_prev:
                 index_complete_prev = data_events_complete.index(event_complete_prev)
                 data_events_complete.insert(index_complete_prev + 1, e)
@@ -70,11 +70,11 @@ for e in data_events_live:
         else:
             data_events_complete.insert(0, e)
     else:
-        print(f"+- Comparing event {e['caption']}")
+        print(f"+- Comparing event {e['id']}")
         if (e != ec):
-            print(f"--> Updating event {e['caption']}")
+            print(f"--> Updating event {e['id']}")
             for z in data_events_complete:
-                if (z['caption'] == e['caption']):
+                if (z['id'] == e['id']):
                     index = data_events_complete.index(z)
                     data_events_complete[index] = e
 
