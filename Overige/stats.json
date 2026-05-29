@@ -1,6 +1,6 @@
 {
-  "mission_amount": 1866,
-  "average_credits": 21341.46,
+  "mission_amount": 1865,
+  "average_credits": 21352.64,
   "min_credits": 110,
   "max_credits": 107387,
   "alliance_mission_amount": 8,
@@ -33,12 +33,12 @@
       "average_credits": 8220.0
     },
     "fire": {
-      "mission_amount": 1034,
-      "average_credits": 31328.67
+      "mission_amount": 1033,
+      "average_credits": 31356.94
     },
     "fire_support_specialization": {
-      "mission_amount": 487,
-      "average_credits": 60417.18
+      "mission_amount": 485,
+      "average_credits": 60656.65
     },
     "forestry": {
       "mission_amount": 60,
@@ -81,8 +81,8 @@
       "average_credits": 5398.97
     },
     "urban": {
-      "mission_amount": 937,
-      "average_credits": 33938.45
+      "mission_amount": 936,
+      "average_credits": 33972.44
     },
     "water_rescue": {
       "mission_amount": 82,
