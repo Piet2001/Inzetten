@@ -44,6 +44,14 @@
       "mission_amount": 60,
       "average_credits": 34288.3
     },
+    "hazard_response_specialization": {
+      "mission_amount": 280,
+      "average_credits": 80663.74
+    },
+    "industrial_response_specialization": {
+      "mission_amount": 398,
+      "average_credits": 71749.55
+    },
     "military_police": {
       "mission_amount": 7,
       "average_credits": 1071.43
