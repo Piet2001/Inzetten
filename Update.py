@@ -1,5 +1,12 @@
 import json
+import re
 from Overige import stats
+
+def sort_key(x):
+    m = re.match(r'^(\d+)(.*)', x['id'])
+    if m:
+        return (int(m.group(1)), m.group(2))
+    return (float('inf'), x['id'])
 
 print("start")
 
@@ -29,8 +36,9 @@ for m in data_live:
                     data_complete[index] = m
 
 
-with open('complete.json', 'w') as outfile:
-    json.dump(data_complete, outfile)
+data_complete.sort(key=sort_key)
+with open('complete.json', 'w', encoding='utf-8') as outfile:
+    json.dump(data_complete, outfile, indent=2, ensure_ascii=False)
 
 
 live.close()
@@ -78,8 +86,9 @@ for e in data_events_live:
                     index = data_events_complete.index(z)
                     data_events_complete[index] = e
 
-with open('events_complete.json', 'w') as outfile:
-    json.dump(data_events_complete, outfile)
+data_events_complete.sort(key=sort_key)
+with open('events_complete.json', 'w', encoding='utf-8') as outfile:
+    json.dump(data_events_complete, outfile, indent=2, ensure_ascii=False)
 
 try:
     events_live.close()
