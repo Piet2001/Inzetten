@@ -3,10 +3,11 @@ import re
 from Overige import stats
 
 def sort_key(x):
-    m = re.match(r'^(\d+)(.*)', x['id'])
+    raw_id = str(x.get('id', ''))
+    m = re.match(r'^(\d+)(.*)', raw_id)
     if m:
         return (int(m.group(1)), m.group(2))
-    return (float('inf'), x['id'])
+    return (float('inf'), raw_id)
 
 print("start")
 
