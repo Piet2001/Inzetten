@@ -1,6 +1,6 @@
 {
-  "mission_amount": 1886,
-  "average_credits": 21121.28,
+  "mission_amount": 1887,
+  "average_credits": 21110.15,
   "min_credits": 110,
   "max_credits": 107387,
   "alliance_mission_amount": 8,
@@ -13,8 +13,8 @@
       "average_credits": 6794.06
     },
     "ambulance": {
-      "mission_amount": 72,
-      "average_credits": 2811.81
+      "mission_amount": 73,
+      "average_credits": 2797.12
     },
     "bomb_disposal": {
       "mission_amount": 9,
@@ -93,16 +93,16 @@
       "average_credits": 33728.34
     },
     "water_rescue": {
-      "mission_amount": 84,
-      "average_credits": 4913.1
+      "mission_amount": 85,
+      "average_credits": 4875.76
     },
     "water_rescue_2": {
       "mission_amount": 31,
       "average_credits": 3079.03
     },
     "water_rescue_specialization": {
-      "mission_amount": 28,
-      "average_credits": 8520.68
+      "mission_amount": 29,
+      "average_credits": 8286.86
     }
   }
 }
