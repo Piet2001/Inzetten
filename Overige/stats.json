@@ -1,6 +1,6 @@
 {
-  "mission_amount": 1887,
-  "average_credits": 21110.15,
+  "mission_amount": 1891,
+  "average_credits": 21067.74,
   "min_credits": 110,
   "max_credits": 107387,
   "alliance_mission_amount": 8,
@@ -54,15 +54,15 @@
     },
     "military_police": {
       "mission_amount": 7,
-      "average_credits": 1071.43
+      "average_credits": 907.14
     },
     "police": {
-      "mission_amount": 278,
-      "average_credits": 2451.83
+      "mission_amount": 281,
+      "average_credits": 2456.87
     },
     "riot_police": {
-      "mission_amount": 100,
-      "average_credits": 6610.15
+      "mission_amount": 101,
+      "average_credits": 6573.02
     },
     "rural": {
       "mission_amount": 201,
