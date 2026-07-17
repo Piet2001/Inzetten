@@ -2,6 +2,7 @@ import json
 from calendar import monthrange
 from datetime import date, datetime
 from pathlib import Path
+from typing import Optional
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -15,7 +16,7 @@ def load_json(path: Path):
         return json.load(file)
 
 
-def parse_ddmmyyyy(value: str) -> date | None:
+def parse_ddmmyyyy(value: str) -> Optional[date]:
     try:
         return datetime.strptime(value, "%d-%m-%Y").date()
     except (TypeError, ValueError):
