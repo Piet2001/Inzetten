@@ -3,12 +3,14 @@ from calendar import monthrange
 from datetime import date, datetime
 from pathlib import Path
 from typing import Optional
+from zoneinfo import ZoneInfo
 
 
 ROOT = Path(__file__).resolve().parent.parent
 COMPLETE_FILE = ROOT / "complete.json"
 MISSION_DATES_FILE = ROOT / "Overige" / "mission_dates.json"
 ARCHIVE_FILE = ROOT / "Overige" / "archive.json"
+DUTCH_TIMEZONE = ZoneInfo("Europe/Amsterdam")
 
 
 def load_json(path: Path):
@@ -47,7 +49,8 @@ def main() -> None:
     if not isinstance(archive_data, list):
         raise ValueError(f"{ARCHIVE_FILE} must contain a JSON list.")
 
-    cutoff_date = subtract_months(date.today(), 3)
+    today_nl = datetime.now(DUTCH_TIMEZONE).date()
+    cutoff_date = subtract_months(today_nl, 3)
     dates_by_id: dict[str, date] = {}
     for item in mission_dates:
         if not isinstance(item, dict) or "id" not in item:
@@ -72,10 +75,16 @@ def main() -> None:
         else:
             keep_missions.append(mission)
 
+    keep_ids = {
+        str(mission["id"])
+        for mission in keep_missions
+        if isinstance(mission, dict) and "id" in mission
+    }
+
     archive_by_id = {
         str(item.get("id")): item
         for item in archive_data
-        if isinstance(item, dict) and "id" in item
+        if isinstance(item, dict) and "id" in item and str(item.get("id")) not in keep_ids
     }
     for mission in removed_missions:
         archive_by_id[str(mission["id"])] = mission
