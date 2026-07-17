@@ -1,5 +1,6 @@
 import json
 import re
+from pathlib import Path
 from Overige import discord, stats
 
 def sort_key(x):
@@ -10,6 +11,8 @@ def sort_key(x):
     return (float('inf'), raw_id)
 
 print("start")
+
+mission_snapshot_path = Path('Overige/mission_ids_snapshot.json')
 
 live = open('inzetten.json')
 data_live = json.load(live)
@@ -42,8 +45,23 @@ complete_by_id = {
 live_ids = set(live_by_id.keys())
 complete_ids = set(complete_by_id.keys())
 
+previous_live_ids = set()
+if mission_snapshot_path.exists():
+    try:
+        with mission_snapshot_path.open('r', encoding='utf-8') as snapshot_file:
+            snapshot_data = json.load(snapshot_file)
+            if isinstance(snapshot_data, list):
+                previous_live_ids = {
+                    str(mission_id)
+                    for mission_id in snapshot_data
+                    if mission_id is not None
+                }
+    except Exception as e:
+        print(f"Could not read mission snapshot: {e}")
+
 added_ids = sorted(live_ids - complete_ids, key=id_sort_key)
 removed_ids = sorted(complete_ids - live_ids, key=id_sort_key)
+removed_from_snapshot = sorted(previous_live_ids - live_ids, key=id_sort_key)
 
 for m in data_live:
     print(f"?? Checking mission {m['id']}")
@@ -68,13 +86,16 @@ for removed_id in removed_ids:
 
 data_complete = list(complete_by_id.values())
 
-if removed_missions:
-    change_lines = [f"Removed ({len(removed_missions)}): {', '.join(removed_missions)}"]
+if removed_from_snapshot:
+    change_lines = [f"Removed ({len(removed_from_snapshot)}): {', '.join(removed_from_snapshot)}"]
     discord.webhook(
         "MKS Mission List Update",
         "\n".join(change_lines),
         color="16711680",
     )
+
+with mission_snapshot_path.open('w', encoding='utf-8') as snapshot_file:
+    json.dump(sorted(live_ids, key=id_sort_key), snapshot_file, indent=2, ensure_ascii=False)
 
 
 data_complete.sort(key=sort_key)
