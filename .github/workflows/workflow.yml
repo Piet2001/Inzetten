@@ -30,6 +30,9 @@ jobs:
         python Update.py
       env:
         DISCORD: ${{ secrets.DISCORD  }}
+
+    - name: Archive removed missions
+      run: python Overige/Check_removed_missions.py
                 
     - name: json-syntax-check
       uses: limitusus/json-syntax-check@v1
