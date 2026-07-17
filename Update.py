@@ -1,6 +1,6 @@
 import json
 import re
-from Overige import stats
+from Overige import discord, stats
 
 def sort_key(x):
     raw_id = str(x.get('id', ''))
@@ -16,25 +16,65 @@ data_live = json.load(live)
 complete = open('complete.json')
 data_complete = json.load(complete)
 
+
+def id_sort_key(raw_id):
+    value = str(raw_id)
+    m = re.match(r'^(\d+)(.*)', value)
+    if m:
+        return (int(m.group(1)), m.group(2))
+    return (float('inf'), value)
+
+
+added_missions = []
+removed_missions = []
+
+live_by_id = {
+    str(mission.get('id')): mission
+    for mission in data_live
+    if isinstance(mission, dict) and mission.get('id') is not None
+}
+complete_by_id = {
+    str(mission.get('id')): mission
+    for mission in data_complete
+    if isinstance(mission, dict) and mission.get('id') is not None
+}
+
+live_ids = set(live_by_id.keys())
+complete_ids = set(complete_by_id.keys())
+
+added_ids = sorted(live_ids - complete_ids, key=id_sort_key)
+removed_ids = sorted(complete_ids - live_ids, key=id_sort_key)
+
 for m in data_live:
     print(f"?? Checking mission {m['id']}")
-    mc = next((x for x in data_complete if x["id"] == m["id"]), None)
+    mission_id = str(m['id'])
+    mc = complete_by_id.get(mission_id)
 
     if(mc == None):
         print(f"++ {m['id']} doens't exist, will be added")
-        index_live = data_live.index(m)
-        mission_live_prev = data_live[index_live - 1]
-        mission_complete_prev = next((x for x in data_complete if x["id"] == mission_live_prev["id"]))
-        index_complete_prev = data_complete.index(mission_complete_prev)
-        data_complete.insert(index_complete_prev + 1, m)
+        complete_by_id[mission_id] = m
+        if mission_id in added_ids:
+            added_missions.append(mission_id)
     else:
         print(f"+- Comparing mission {m['id']}")
         if (m != mc):
             print(f"--> Updating mission {m['id']}")
-            for z in data_complete:
-                if (z['id'] == m['id']):
-                    index = data_complete.index(z)
-                    data_complete[index] = m
+        complete_by_id[mission_id] = m
+
+for removed_id in removed_ids:
+    print(f"-- {removed_id} no longer exists in inzetten.json, removing")
+    complete_by_id.pop(removed_id, None)
+    removed_missions.append(removed_id)
+
+data_complete = list(complete_by_id.values())
+
+if removed_missions:
+    change_lines = [f"Removed ({len(removed_missions)}): {', '.join(removed_missions)}"]
+    discord.webhook(
+        "MKS Mission List Update",
+        "\n".join(change_lines),
+        color="16711680",
+    )
 
 
 data_complete.sort(key=sort_key)
