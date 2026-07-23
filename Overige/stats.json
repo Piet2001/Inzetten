@@ -1,7 +1,7 @@
 {
-  "mission_amount": 1892,
-  "average_credits": 21055.95,
-  "min_credits": 110,
+  "mission_amount": 2493,
+  "average_credits": 25950.76,
+  "min_credits": 130,
   "max_credits": 107387,
   "alliance_mission_amount": 8,
   "alliance_Average_credits": 32670,
@@ -13,8 +13,8 @@
       "average_credits": 6794.06
     },
     "ambulance": {
-      "mission_amount": 74,
-      "average_credits": 2766.08
+      "mission_amount": 77,
+      "average_credits": 3121.43
     },
     "bomb_disposal": {
       "mission_amount": 9,
@@ -33,12 +33,12 @@
       "average_credits": 8220.0
     },
     "fire": {
-      "mission_amount": 1048,
-      "average_credits": 30924.18
+      "mission_amount": 1635,
+      "average_credits": 34516.27
     },
     "fire_support_specialization": {
-      "mission_amount": 485,
-      "average_credits": 60656.65
+      "mission_amount": 477,
+      "average_credits": 61502.55
     },
     "forestry": {
       "mission_amount": 60,
@@ -57,16 +57,20 @@
       "average_credits": 907.14
     },
     "police": {
-      "mission_amount": 281,
-      "average_credits": 2456.87
+      "mission_amount": 284,
+      "average_credits": 2462.75
+    },
+    "railway": {
+      "mission_amount": 5,
+      "average_credits": 2848.0
     },
     "riot_police": {
       "mission_amount": 101,
       "average_credits": 6573.02
     },
     "rural": {
-      "mission_amount": 201,
-      "average_credits": 2655.55
+      "mission_amount": 199,
+      "average_credits": 2658.42
     },
     "search_and_rescue": {
       "mission_amount": 4,
@@ -77,20 +81,20 @@
       "average_credits": 5712.19
     },
     "tow_trucks": {
-      "mission_amount": 22,
-      "average_credits": 2778.18
+      "mission_amount": 25,
+      "average_credits": 4578.8
     },
     "tow_trucks_only": {
-      "mission_amount": 22,
-      "average_credits": 2778.18
+      "mission_amount": 25,
+      "average_credits": 4578.8
     },
     "traffic_police_specialization": {
       "mission_amount": 39,
       "average_credits": 5398.97
     },
     "urban": {
-      "mission_amount": 943,
-      "average_credits": 33728.34
+      "mission_amount": 952,
+      "average_credits": 33807.26
     },
     "water_rescue": {
       "mission_amount": 85,
