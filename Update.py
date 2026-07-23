@@ -14,9 +14,9 @@ print("start")
 
 mission_snapshot_path = Path('Overige/mission_ids_snapshot.json')
 
-live = open('inzetten.json')
+live = open('inzetten.json', encoding='utf-8-sig')
 data_live = json.load(live)
-complete = open('complete.json')
+complete = open('complete.json', encoding='utf-8-sig')
 data_complete = json.load(complete)
 
 
@@ -48,7 +48,7 @@ complete_ids = set(complete_by_id.keys())
 previous_live_ids = set()
 if mission_snapshot_path.exists():
     try:
-        with mission_snapshot_path.open('r', encoding='utf-8') as snapshot_file:
+        with mission_snapshot_path.open('r', encoding='utf-8-sig') as snapshot_file:
             snapshot_data = json.load(snapshot_file)
             if isinstance(snapshot_data, list):
                 previous_live_ids = {
@@ -110,14 +110,14 @@ print("finished")
 
 # --- EVENTS SECTION ---
 try:
-    events_live = open('events.json')
+    events_live = open('events.json', encoding='utf-8-sig')
     data_events_live = json.load(events_live)
 except Exception as e:
     print(f"Error opening events.json: {e}")
     data_events_live = []
 
 try:
-    events_complete = open('events_complete.json')
+    events_complete = open('events_complete.json', encoding='utf-8-sig')
     data_events_complete = json.load(events_complete)
 except Exception:
     data_events_complete = []
