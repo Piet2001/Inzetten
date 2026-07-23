@@ -80,9 +80,8 @@ for m in data_live:
         complete_by_id[mission_id] = m
 
 for removed_id in removed_ids:
-    print(f"-- {removed_id} no longer exists in inzetten.json, removing")
-    complete_by_id.pop(removed_id, None)
-    removed_missions.append(removed_id)
+    # Keep missing missions in complete.json for time-based archival.
+    print(f"-- {removed_id} no longer exists in inzetten.json, keeping until archive threshold")
 
 data_complete = list(complete_by_id.values())
 
