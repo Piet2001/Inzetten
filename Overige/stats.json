@@ -1,6 +1,6 @@
 {
   "mission_amount": 2493,
-  "average_credits": 25950.76,
+  "average_credits": 25950.96,
   "min_credits": 130,
   "max_credits": 107387,
   "alliance_mission_amount": 8,
@@ -58,7 +58,7 @@
     },
     "police": {
       "mission_amount": 284,
-      "average_credits": 2462.75
+      "average_credits": 2464.37
     },
     "railway": {
       "mission_amount": 5,
