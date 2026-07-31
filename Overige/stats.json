@@ -64,6 +64,10 @@
       "mission_amount": 5,
       "average_credits": 2848.0
     },
+    "railway_fire": {
+      "mission_amount": 626,
+      "average_credits": 38874.92
+    },
     "riot_police": {
       "mission_amount": 101,
       "average_credits": 6573.02
