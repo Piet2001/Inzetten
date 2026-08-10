@@ -1,6 +1,6 @@
 {
-  "mission_amount": 2493,
-  "average_credits": 25950.96,
+  "mission_amount": 2494,
+  "average_credits": 25945.13,
   "min_credits": 130,
   "max_credits": 107387,
   "alliance_mission_amount": 8,
@@ -29,12 +29,12 @@
       "average_credits": 8269.31
     },
     "disaster_response": {
-      "mission_amount": 6,
-      "average_credits": 8220.0
+      "mission_amount": 7,
+      "average_credits": 8797.14
     },
     "fire": {
-      "mission_amount": 1637,
-      "average_credits": 34477.69
+      "mission_amount": 1638,
+      "average_credits": 34464.13
     },
     "fire_support_specialization": {
       "mission_amount": 477,
