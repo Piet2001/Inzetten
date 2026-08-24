@@ -1,7 +1,7 @@
 {
-  "mission_amount": 2495,
-  "average_credits": 25935.16,
-  "min_credits": 130,
+  "mission_amount": 2497,
+  "average_credits": 25922.57,
+  "min_credits": 250,
   "max_credits": 107387,
   "alliance_mission_amount": 8,
   "alliance_Average_credits": 32670,
@@ -14,7 +14,7 @@
     },
     "ambulance": {
       "mission_amount": 75,
-      "average_credits": 3126.27
+      "average_credits": 3134.93
     },
     "bomb_disposal": {
       "mission_amount": 9,
@@ -33,12 +33,12 @@
       "average_credits": 8797.14
     },
     "fire": {
-      "mission_amount": 1639,
-      "average_credits": 34444.65
+      "mission_amount": 1640,
+      "average_credits": 34435.77
     },
     "fire_support_specialization": {
-      "mission_amount": 477,
-      "average_credits": 61502.55
+      "mission_amount": 479,
+      "average_credits": 61262.41
     },
     "forestry": {
       "mission_amount": 60,
@@ -58,7 +58,7 @@
     },
     "police": {
       "mission_amount": 284,
-      "average_credits": 2464.37
+      "average_credits": 2464.54
     },
     "railway": {
       "mission_amount": 5,
@@ -73,8 +73,8 @@
       "average_credits": 6573.02
     },
     "rural": {
-      "mission_amount": 199,
-      "average_credits": 2658.42
+      "mission_amount": 198,
+      "average_credits": 2697.25
     },
     "search_and_rescue": {
       "mission_amount": 4,
@@ -86,23 +86,23 @@
     },
     "tow_trucks": {
       "mission_amount": 25,
-      "average_credits": 4578.8
+      "average_credits": 4584.0
     },
     "tow_trucks_only": {
       "mission_amount": 25,
-      "average_credits": 4578.8
+      "average_credits": 4584.0
     },
     "traffic_police_specialization": {
       "mission_amount": 39,
       "average_credits": 5398.97
     },
     "urban": {
-      "mission_amount": 952,
-      "average_credits": 33807.26
+      "mission_amount": 954,
+      "average_credits": 33755.22
     },
     "water_rescue": {
       "mission_amount": 85,
-      "average_credits": 4875.76
+      "average_credits": 4888.71
     },
     "water_rescue_2": {
       "mission_amount": 31,
