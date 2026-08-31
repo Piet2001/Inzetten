@@ -1,6 +1,6 @@
 {
-  "mission_amount": 2497,
-  "average_credits": 25922.57,
+  "mission_amount": 2499,
+  "average_credits": 25902.1,
   "min_credits": 250,
   "max_credits": 107387,
   "alliance_mission_amount": 8,
@@ -13,8 +13,8 @@
       "average_credits": 6794.06
     },
     "ambulance": {
-      "mission_amount": 75,
-      "average_credits": 3134.93
+      "mission_amount": 77,
+      "average_credits": 3101.43
     },
     "bomb_disposal": {
       "mission_amount": 9,
