@@ -1,6 +1,6 @@
 {
   "mission_amount": 2499,
-  "average_credits": 25902.1,
+  "average_credits": 25902.35,
   "min_credits": 250,
   "max_credits": 107387,
   "alliance_mission_amount": 8,
@@ -34,7 +34,7 @@
     },
     "fire": {
       "mission_amount": 1640,
-      "average_credits": 34435.77
+      "average_credits": 34436.13
     },
     "fire_support_specialization": {
       "mission_amount": 479,
@@ -98,7 +98,7 @@
     },
     "urban": {
       "mission_amount": 954,
-      "average_credits": 33755.22
+      "average_credits": 33755.84
     },
     "water_rescue": {
       "mission_amount": 85,
