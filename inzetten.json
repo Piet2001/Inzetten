@@ -6497,8 +6497,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2025-11-14T10:00:00Z",
-      "date_end": "2025-12-06T23:59:59Z"
+      "date_start": "2026-11-13T10:00:00Z",
+      "date_end": "2026-12-06T23:59:59Z"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -6524,8 +6524,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-11-14T10:00:00Z",
-      "date_end": "2025-12-06T23:59:59Z",
+      "date_start": "2026-11-13T10:00:00Z",
+      "date_end": "2026-12-06T23:59:59Z",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatologie"],
       "patient_specializations": "Traumatologie"
@@ -6554,8 +6554,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-11-14T10:00:00Z",
-      "date_end": "2025-12-06T23:59:59Z",
+      "date_start": "2026-11-13T10:00:00Z",
+      "date_end": "2026-12-06T23:59:59Z",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatologie"],
       "patient_specializations": "Traumatologie"
@@ -6582,8 +6582,8 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "date_start": "2025-11-14T10:00:00Z",
-      "date_end": "2025-12-06T23:59:59Z"
+      "date_start": "2026-11-13T10:00:00Z",
+      "date_end": "2026-12-06T23:59:59Z"
     },
     "prerequisites": { "main_building": 5, "police_stations": 1 },
     "overlay_index": null,
@@ -6609,8 +6609,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-11-14T10:00:00Z",
-      "date_end": "2025-12-06T23:59:59Z",
+      "date_start": "2026-11-13T10:00:00Z",
+      "date_end": "2026-12-06T23:59:59Z",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Interne Geneeskunde"],
       "patient_specializations": "Interne Geneeskunde"
@@ -6639,8 +6639,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
-      "date_start": "2025-11-14T10:00:00Z",
-      "date_end": "2025-12-06T23:59:59Z",
+      "date_start": "2026-11-13T10:00:00Z",
+      "date_end": "2026-12-06T23:59:59Z",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatologie"],
       "patient_specializations": "Traumatologie"
@@ -6680,8 +6680,8 @@
       "duration": 7200,
       "guard_mission": true,
       "filter_id": "police_station_missions",
-      "date_start": "2025-11-14T10:00:00Z",
-      "date_end": "2025-12-06T23:59:59Z"
+      "date_start": "2026-11-13T10:00:00Z",
+      "date_end": "2026-12-06T23:59:59Z"
     },
     "prerequisites": {
       "main_building": 5,
@@ -6715,8 +6715,8 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "date_start": "2025-11-14T10:00:00Z",
-      "date_end": "2025-12-06T23:59:59Z"
+      "date_start": "2026-11-13T10:00:00Z",
+      "date_end": "2026-12-06T23:59:59Z"
     },
     "prerequisites": { "main_building": 5, "police_stations": 1 },
     "overlay_index": null,
@@ -6742,8 +6742,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-11-14T10:00:00Z",
-      "date_end": "2025-12-06T23:59:59Z",
+      "date_start": "2026-11-13T10:00:00Z",
+      "date_end": "2026-12-06T23:59:59Z",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatologie"],
       "patient_specializations": "Traumatologie"
@@ -10759,8 +10759,8 @@
     "chances": {},
     "additional": {
       "filter_id": "water_watch_missions",
-      "date_start": "2025-11-14T10:00:00Z",
-      "date_end": "2025-12-06T23:59:59Z"
+      "date_start": "2026-11-13T10:00:00Z",
+      "date_end": "2026-12-06T23:59:59Z"
     },
     "prerequisites": {
       "main_building": -1,
