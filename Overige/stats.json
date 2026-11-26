@@ -1,8 +1,8 @@
 {
-  "mission_amount": 2658,
-  "average_credits": 26284.62,
+  "mission_amount": 3160,
+  "average_credits": 32464.34,
   "min_credits": 250,
-  "max_credits": 107387,
+  "max_credits": 108137,
   "alliance_mission_amount": 8,
   "alliance_Average_credits": 32670,
   "planned_mission_amount": 51,
@@ -25,32 +25,32 @@
       "average_credits": 5921.67
     },
     "coastal_rescue_ocean": {
-      "mission_amount": 16,
-      "average_credits": 8269.31
+      "mission_amount": 20,
+      "average_credits": 10104.3
     },
     "disaster_response": {
       "mission_amount": 7,
       "average_credits": 8797.14
     },
     "fire": {
-      "mission_amount": 1792,
-      "average_credits": 34300.41
+      "mission_amount": 2278,
+      "average_credits": 40872.88
     },
     "fire_support_specialization": {
-      "mission_amount": 479,
-      "average_credits": 61262.41
+      "mission_amount": 855,
+      "average_credits": 67881.98
     },
     "forestry": {
       "mission_amount": 60,
       "average_credits": 34288.3
     },
     "hazard_response_specialization": {
-      "mission_amount": 280,
-      "average_credits": 80663.74
+      "mission_amount": 536,
+      "average_credits": 84275.93
     },
     "industrial_response_specialization": {
-      "mission_amount": 398,
-      "average_credits": 71749.55
+      "mission_amount": 766,
+      "average_credits": 74604.22
     },
     "military_police": {
       "mission_amount": 7,
@@ -61,12 +61,12 @@
       "average_credits": 2466.46
     },
     "railway": {
-      "mission_amount": 5,
-      "average_credits": 2848.0
+      "mission_amount": 653,
+      "average_credits": 38334.61
     },
     "railway_fire": {
-      "mission_amount": 626,
-      "average_credits": 38874.92
+      "mission_amount": 463,
+      "average_credits": 38272.41
     },
     "riot_police": {
       "mission_amount": 101,
@@ -97,20 +97,20 @@
       "average_credits": 5398.97
     },
     "urban": {
-      "mission_amount": 961,
-      "average_credits": 33554.17
+      "mission_amount": 1371,
+      "average_credits": 45206.2
     },
     "water_rescue": {
-      "mission_amount": 156,
-      "average_credits": 26643.72
+      "mission_amount": 168,
+      "average_credits": 25325.18
     },
     "water_rescue_2": {
       "mission_amount": 31,
       "average_credits": 3079.03
     },
     "water_rescue_specialization": {
-      "mission_amount": 97,
-      "average_credits": 40987.62
+      "mission_amount": 101,
+      "average_credits": 39970.21
     }
   }
 }
